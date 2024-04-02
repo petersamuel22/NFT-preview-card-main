@@ -1,0 +1,108 @@
+body {
+    background-color: #0D1A2D;
+}
+
+a,
+p,
+h1,
+h2,
+h3,
+h4 {
+    color: white;
+}
+
+p {
+    color: #8499B6;
+    max-width: 30ch;
+}
+
+span {
+    color: white;
+}
+
+/* utility classes */
+
+.even-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/*  */
+
+main {
+    display: flex;
+    min-height: 97vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    padding: 1.25rem;
+    border-radius: 10px;
+    background-color: #15273F;
+}
+
+.equilibrium-img {
+    width: 17rem;
+    border-radius: 10px;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.expiration-balance {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.163);
+    padding-bottom: 1.25rem;
+}
+
+.expiration-balance .balance:before {
+    content: '';
+    background-image: url(images/icon-ethereum.svg);
+    display: inline-block;
+    vertical-align: middle;
+    height: 1.5rem;
+    width: 1rem;
+    background-repeat: no-repeat;
+    margin-right: 0.25vw;
+}
+
+.expiration-balance .balance {
+    color: cyan;
+}
+
+.expiration-balance .expiration:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url(images/icon-clock.svg);
+    background-repeat: no-repeat;
+    height: 1.25rem;
+    width: 1rem;
+    margin-right: 0.5vw;
+}
+
+.creator-avatar {
+    margin-top: 2vh;
+}
+
+.creator-avatar:before {
+    content: '';
+    display: inline-block;
+    height: 1.75rem;
+    width: 1.75rem;
+    vertical-align: middle;
+    border: solid 1px white;
+    border-radius: 100%;
+    background-image: url(images/image-avatar.png);
+    background-size: contain;
+    margin-right: 0.5rem;
+    margin-top: -0.6vh;
+}
